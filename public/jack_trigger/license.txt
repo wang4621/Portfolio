@@ -1,0 +1,11 @@
+Model Information:
+* title:	Jack Trigger
+* source:	https://sketchfab.com/3d-models/jack-trigger-0d251b65dfa04e3e88cd8774b77c3a27
+* author:	BlackSpire (https://sketchfab.com/blackspire)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Jack Trigger" (https://sketchfab.com/3d-models/jack-trigger-0d251b65dfa04e3e88cd8774b77c3a27) by BlackSpire (https://sketchfab.com/blackspire) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
