@@ -57,7 +57,10 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="sm:hidden flex justify-center items-end flex-col space-y-2 cursor-pointer" onClick={() => setToggle(!toggle)}>
+        <div
+          className="sm:hidden flex justify-center items-end flex-col space-y-2 cursor-pointer"
+          onClick={() => setToggle(!toggle)}
+        >
           {/* <img
             src={toggle ? close : menu}
             alt="menu"
