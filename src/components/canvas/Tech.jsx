@@ -1,46 +1,37 @@
-import React, { Suspense, useEffect, useRef } from "react";
+import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   OrbitControls,
   Preload,
   useGLTF,
-  useAnimations,
 } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Model = () => {
-  const group = useRef();
-  const { scene, animations } = useGLTF("/dance.glb");
-  const { actions } = useAnimations(animations, group);
-
-  useEffect(() => {
-    actions.dance.play();
-  }, []);
+  const { scene } = useGLTF("/tech.glb");
 
   return (
     <primitive
       object={scene}
-      scale={1.2}
-      position-y={-1}
-      position-x={-0.3}
-      ref={group}
-      dispose={null}
+      scale={0.055}
+        // scale={0.02}
     />
   );
 };
 
-const AnimatedCanvas = () => {
+const TechCanvas = () => {
   return (
     <Canvas
-      frameloop="always"
+      frameloop="demand"
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
       camera={{
-        fov: 45,
+        fov: 35,
       }}
       className="z-20"
     >
       <OrbitControls
+        autoRotate
         enableZoom={false}
         autoRotateSpeed={0.6}
         maxPolarAngle={Math.PI/2}
@@ -55,4 +46,4 @@ const AnimatedCanvas = () => {
   );
 };
 
-export default AnimatedCanvas;
+export default TechCanvas;
