@@ -21,7 +21,7 @@ const Model = () => {
     <primitive
       object={scene}
       scale={1.2}
-      position-y={-1}
+      position-y={-1.3}
       position-x={-0.3}
       ref={group}
       dispose={null}
@@ -42,7 +42,6 @@ const AnimatedCanvas = () => {
     >
       <OrbitControls
         enableZoom={false}
-        autoRotateSpeed={0.6}
         maxPolarAngle={Math.PI/2}
         minPolarAngle={Math.PI/2}
       />
