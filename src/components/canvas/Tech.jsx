@@ -33,7 +33,7 @@ const TechCanvas = () => {
       <OrbitControls
         autoRotate
         enableZoom={false}
-        autoRotateSpeed={0.6}
+        autoRotateSpeed={0.8}
         maxPolarAngle={Math.PI/2}
         minPolarAngle={Math.PI/2}
       />
